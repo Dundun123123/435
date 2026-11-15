@@ -1,0 +1,40 @@
+{
+  "dataset": "Stanford Large Movie Review Dataset v1.0 (IMDb)",
+  "source": "https://ai.stanford.edu/~amaas/data/sentiment/",
+  "download_url": "https://d2l-data.s3-accelerate.amazonaws.com/aclImdb_v1.tar.gz",
+  "mirror_reference": "https://d2l.ai/_modules/d2l/torch.html",
+  "published_sha1": "01ada507287d82875905620988597833ad4e0903",
+  "downloaded_utc": "2026-11-15T12:27:32.162291+00:00",
+  "archive_sha256": "c40f74a18d3b61f90feba1e17730e0d38e8b97c05fde7008942e91923d1658fe",
+  "original_reviews": 100000,
+  "removed_duplicates": 1537,
+  "removed_empty": 0,
+  "random_state": 42,
+  "files": [
+    {
+      "file": "imdb.jsonl",
+      "documents": 98463,
+      "tokens": 23257053,
+      "bytes": 138001468,
+      "sha256": "1a36bece88d473792b3fc947a14d155685c47a02d38b18c58ee77ffc134f1263"
+    },
+    {
+      "file": "imdb_short.jsonl",
+      "documents": 5000,
+      "tokens": 473642,
+      "bytes": 3099404,
+      "sha256": "3342bc64d2dd9e9c14048814609d0c57efb6154112be9b77f9d73636e408cfee"
+    },
+    {
+      "file": "imdb_long.jsonl",
+      "documents": 5000,
+      "tokens": 2406105,
+      "bytes": 13871669,
+      "sha256": "45b4d5fdf979847c29d4418208e4043d1068cd353eb8f6b80bec4da2b8dd4a01"
+    }
+  ],
+  "preprocessing": "Remove HTML tags, unescape entities, collapse whitespace, deduplicate identical cleaned UTF-8 text. Labels are metadata only.",
+  "length_sampling": "Equal-size seeded random samples from bottom/top token-count quartiles; no overlap; length is confounded with content, not a controlled causal experiment.",
+  "citation": "Maas et al. (2011), Learning Word Vectors for Sentiment Analysis, ACL, https://aclanthology.org/P11-1015/",
+  "usage": "Original review rights are not relicensed by this project. Consult original dataset README and source conditions."
+}

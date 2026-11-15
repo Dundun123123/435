@@ -1,0 +1,30 @@
+{
+  "python": "3.13.12",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "logical_cpus": 8,
+  "arguments": {
+    "input": "data/imdb_long.jsonl",
+    "sizes": [
+      5000
+    ],
+    "workers": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "repeats": 10,
+    "warmups": 1,
+    "batch_size": 500,
+    "top_k": 10,
+    "output_dir": "results\\study_v3\\long"
+  },
+  "input_sha256": "45b4d5fdf979847c29d4418208e4043d1068cd353eb8f6b80bec4da2b8dd4a01",
+  "input_file_bytes": 13871669,
+  "started_utc": "2026-11-15T12:43:01.351355+00:00",
+  "implementation": "packed-shard-processes-v3",
+  "timing": "In-memory raw text through output dictionaries; includes process startup, IPC, result decoding and shutdown. Excludes input/output files, token-count diagnostics, plotting and validation.",
+  "uncertainty": "Time error bars: sample IQR (not CI). Speedup: ratio of medians; paired-trial bootstrap percentile 95% interval, 1000 resamples, seed2026; exploratory, not a guarantee.",
+  "phase_note": "Parent stages are consecutive wall intervals, not pure compute/communication attribution. Worker timings overlap each other and parent stages."
+}

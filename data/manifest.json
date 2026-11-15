@@ -1,0 +1,17 @@
+{
+  "dataset": "20 Newsgroups (discussion posts, not news articles)",
+  "source": "https://scikit-learn.org/stable/datasets/real_world.html#the-20-newsgroups-text-dataset",
+  "downloaded_utc": "2026-11-15T11:26:29.418416+00:00",
+  "random_state": 42,
+  "removed": [
+    "headers",
+    "footers",
+    "quotes"
+  ],
+  "original_documents": 18846,
+  "documents": 18311,
+  "filtered_empty_documents": 535,
+  "tokens": 3663692,
+  "sha256": "79229d2a00fe99bfd689c90dc1d6177a4f9457af041b2ea98a2fc8d606c56db6",
+  "usage_note": "Public availability is not a new license grant. Consult the original source terms; no ownership of source posts is claimed."
+}

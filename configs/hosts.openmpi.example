@@ -1,0 +1,3 @@
+# Example only. Replace with your actual node names in an ignored local file.
+node-a slots=2
+node-b slots=2

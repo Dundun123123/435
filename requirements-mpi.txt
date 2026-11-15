@@ -1,0 +1,3 @@
+# An MPI runtime is ALSO required; see docs/MPI_TWO_NODES.md.
+-r requirements.txt
+mpi4py>=4.1,<5

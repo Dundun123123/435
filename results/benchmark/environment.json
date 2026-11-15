@@ -1,0 +1,23 @@
+{
+  "python": "3.13.12",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 8,
+  "arguments": {
+    "input": "data/newsgroups.jsonl",
+    "sizes": [
+      1000,
+      5000,
+      10000
+    ],
+    "workers": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "repeats": 5,
+    "batch_size": 500,
+    "output_dir": "results/benchmark"
+  },
+  "timing": "In-memory raw texts through complete sparse vectors; includes pool startup, IPC, merging and shutdown; excludes file I/O and output."
+}

@@ -1,0 +1,8 @@
+{
+  "implementation": "packed-shard-processes-v3",
+  "documents": 98463,
+  "all_top10_weights_match": true,
+  "reference_library_checks": "100 docs each: full IMDb, short, long",
+  "rel_tol": 1e-10,
+  "abs_tol": 1e-12
+}

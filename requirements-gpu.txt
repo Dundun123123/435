@@ -1,0 +1,3 @@
+# Base packages only. Choose exactly ONE compatible CuPy wheel after GPU/driver
+# detection; no CUDA package is installed blindly. See docs/GPU_BACKEND.md.
+-r requirements.txt

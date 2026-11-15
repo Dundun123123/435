@@ -1,0 +1,9 @@
+{
+  "implementation": "packed-shard-processes-v3",
+  "documents": 18311,
+  "vocabulary": 94287,
+  "full_vectors_match": true,
+  "top10_matches_full_vectors_in_both_modes": true,
+  "rel_tol": 1e-10,
+  "abs_tol": 1e-12
+}
