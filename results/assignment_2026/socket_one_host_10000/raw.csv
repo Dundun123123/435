@@ -1,0 +1,12 @@
+trial,warmup,mode,seconds,worker_processes,hosts
+-1,True,one-host,0.6521092000039062,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+0,False,one-host,0.6761038000113331,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+1,False,one-host,0.6527190000051633,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+2,False,one-host,0.6536123000114458,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+3,False,one-host,0.6658236000075703,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+4,False,one-host,0.6581604000093648,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+5,False,one-host,0.682347199996002,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+6,False,one-host,0.725919000004069,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+7,False,one-host,0.6570542000117712,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+8,False,one-host,0.661025100009283,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+9,False,one-host,0.6631256999971811,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"

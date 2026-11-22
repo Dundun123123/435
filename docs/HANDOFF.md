@@ -1,5 +1,13 @@
 # 第二台电脑与Codex项目交接
 
+## 2026-11-22 最新结果
+
+三组最终实验（单机 CPU、CPU/GPU、单机/双机 CPU）已完成，见 [正式复现指南](ASSIGNMENT_THREE_EXPERIMENTS.md)。双机采用 authenticated TCP，不是 MPI；下文保留初始交接时的历史记录。
+
+## 2026-11-22 最新结果
+
+三组最终实验（单机 CPU、CPU/GPU、单机/双机 CPU）已完成，见 [正式复现指南](ASSIGNMENT_THREE_EXPERIMENTS.md)。双机采用 authenticated TCP，不是 MPI；下文保留初始交接时的历史记录。
+
 ## 目标与当前边界
 
 用户希望在CST435W小组作业中比较四种方案：

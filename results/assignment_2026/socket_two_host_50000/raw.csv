@@ -1,0 +1,7 @@
+trial,warmup,mode,seconds,worker_processes,hosts
+-1,True,two-host,2.802565500009223,4,"[""Computer-A"", ""Computer-A"", ""Computer-B"", ""Computer-B""]"
+0,False,two-host,2.5187524000066333,4,"[""Computer-A"", ""Computer-A"", ""Computer-B"", ""Computer-B""]"
+1,False,two-host,2.8723876000003656,4,"[""Computer-A"", ""Computer-A"", ""Computer-B"", ""Computer-B""]"
+2,False,two-host,2.8764637999993283,4,"[""Computer-A"", ""Computer-A"", ""Computer-B"", ""Computer-B""]"
+3,False,two-host,2.7614901999913855,4,"[""Computer-A"", ""Computer-A"", ""Computer-B"", ""Computer-B""]"
+4,False,two-host,2.522907699996722,4,"[""Computer-A"", ""Computer-A"", ""Computer-B"", ""Computer-B""]"

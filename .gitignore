@@ -29,6 +29,9 @@ results/*seq*.jsonl
 results/*par*.jsonl
 **/mplconfig/
 .cupy/
+.deps/
+.tmp/
+.mpl/
 .cache/
 hosts.local*
 configs/hosts.local*

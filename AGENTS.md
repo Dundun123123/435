@@ -2,7 +2,7 @@
 
 Read README.md, docs/HANDOFF.md and docs/EXPERIMENT_PROTOCOL.md before changing code. Read docs/MPI_TWO_NODES.md or docs/GPU_BACKEND.md for the selected extension.
 
-- Current verified code is CPU v3. MPI/GPU TF-IDF backends DO NOT exist yet. diagnostics/ scripts are capability probes only. Do not claim either extension has been implemented or tested based on probes alone.
+- Verified code includes CPU v3, a single-host MPI implementation, the CPU-tokenization/CUDA-numeric GPU backend, and a two-host CPU backend using authenticated TCP. The two-host result is not an MPI measurement; use the measured results and correctness checks as evidence of execution.
 - Preserve existing sequential/parallel commands and compute_tfidf's three-value return contract. Reuse count_batch and weight_batch wherever applicable. Optional MPI/GPU imports must not break CPU-only machines.
 - Preserve regex [a-z]+, lowercase handling, raw TF, smoothed global IDF and full-vector L2 normalization. Empty documents count toward N; all-empty vocabulary raises a clear error. Restore input order and alphabetic top-k tie breaking.
 - Data and experiments: no fabricated timings, no artificial sequential delays, no silently replicated corpora. Existing published CSVs and figures are historical evidence: never overwrite them when developing a new backend. New results belong under results/local/ until reviewed for publication.

@@ -1,6 +1,6 @@
 # GPU对接与实施指南
 
-**状态：环境/算法/验收方案及diagnostics/gpu_probe.py已准备；GPU TF-IDF后端尚未实现，也没有GPU性能结果。**
+**状态（2026-11-22）：GPU 混合后端已实现并在 RTX 4060 实测。实测数据见 [GPU 本机实验](GPU_LOCAL_RESULTS.md)，执行步骤见 [复现指南](GPU_RUNBOOK.md)。以下保留原设计与验收要求。**
 
 ## 1. 先检测硬件，不盲装CUDA
 
@@ -39,7 +39,7 @@ CPU环境保持可用，先安装requirements-gpu.txt（只包含基础依赖）
 
 ## 4. 接手Codex需实现的方案
 
-计划接口（**当前不存在**）：
+已实现的独立 GPU 入口：
 
 ```text
 python gpu_main.py --input data/imdb.jsonl --limit 90000 --top-k 10 --output results/local/gpu_keywords.jsonl
