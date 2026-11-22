@@ -1,6 +1,6 @@
-# CST435W：TF-IDF 串行、单机多进程与后续 MPI/GPU 实验
+# CST435W：TF-IDF 三组实测实验（CPU、GPU、双机并行）
 
-本仓库用于小组作业，以及在第二台电脑上由 Codex 接手继续开发。**请先读 [项目交接](docs/HANDOFF.md)。**
+本仓库包含小组作业的 TF-IDF 程序、三组实测结果、最终报告和视频复现指南。先读[三组实验复现指南](docs/ASSIGNMENT_THREE_EXPERIMENTS.md)；早期开发记录见[项目交接](docs/HANDOFF.md)。
 
 ## 当前状态
 
@@ -25,6 +25,7 @@
 ```powershell
 git clone https://github.com/Dundun123123/435.git
 cd 435
+git switch codex/gpu-cpu-three-experiments
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe doctor.py
