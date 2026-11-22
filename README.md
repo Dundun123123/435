@@ -9,10 +9,14 @@
 |Python 串行 / multiprocessing|已实现，并完成正确性核对|
 |真实文本数据准备|已实现；大语料不存入Git，脚本可重新获取|
 |CPU重复实验|已完成，250次正式测量；见 [研究结果](results/study_v3/REPORT.md)|
-|双机MPI|已提供设计、环境与验收指南、连通性探针；**TF-IDF MPI后端尚未实现、未实测**|
-|GPU|已提供设计、计时规则与验收指南、设备探针；**TF-IDF GPU后端尚未实现、未实测**|
+|MPI|已实现并实测单机 MPI；MS-MPI 双机远程启动遇到 Windows 认证错误，因此双机正式实验使用下述 TCP 方案|
+|GPU|已实现单进程及 4 进程共享单卡的 CPU 分词 + CUDA 稀疏数值阶段；见 [四模式实测](docs/FOUR_MODE_RESULTS.md)、[CLI 与视频指南](docs/FOUR_MODE_DEMO.md)|
+|双机 CPU 多进程 + TCP|已在两台 Windows 电脑上完成 4 工作进程的单机与双机 TF-IDF 实测；见 [三组实验复现指南](docs/ASSIGNMENT_THREE_EXPERIMENTS.md)|
 
 不要把本机MPI多进程写成双机实验，不要把GPU数值阶段的耗时当作整个文本处理耗时。
+三组作业实验的正式比较、双机主机名核对和三分钟演示命令见 [ASSIGNMENT_THREE_EXPERIMENTS.md](docs/ASSIGNMENT_THREE_EXPERIMENTS.md)。双机实测使用 Python multiprocessing 加经过认证的 TCP 通道；MS-MPI 远程启动因 Windows 认证被拒，**双机时间不是 MPI 时间**。
+
+作业交付：[最终 Word 报告](docs/CST435W_TFIDF_Three_Experiments_Report.docx)、[三组时间折线图](results/assignment_2026/time_comparison.png)和[匿名化原始计时](results/assignment_2026)。公开版本以 Computer-A/B 代替设备名，双机指南的局域网地址是示例，运行前需按 `ipconfig` 替换。
 
 ## 1. Windows 新电脑安装与首次运行
 
@@ -67,6 +71,14 @@ python -m venv .venv
 tfidf.py                 共用词频/IDF/归一化，以及串行和多进程调度
 main.py                  现有CLI；目前只支持sequential/parallel
 benchmark.py             预热、10次重复、原始数据与误差图
+gpu_tfidf.py             CPU分词/CSR + CUDA稀疏数值计算后端
+gpu_main.py              GPU关键词输出CLI
+gpu_benchmark.py         同机CPU/GPU全流程重复实验
+gpu_numeric_benchmark.py 相同CSR上的纯数值阶段重复实验
+socket_tfidf.py          单机/双机共享的CPU工作进程实现
+socket_tfidf_benchmark.py 单机4进程与双机2+2进程重复实验
+socket_tfidf_worker.py   第二台电脑的CPU工作端
+plot_assignment_experiments.py 三组实验的时间折线图
 study.py                 按顺序运行整套CPU实验
 prepare_data.py          20 Newsgroups
 prepare_large_data.py    IMDb + 长短文档样本

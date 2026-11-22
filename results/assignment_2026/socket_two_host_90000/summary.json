@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "backend": "multiprocessing plus authenticated TCP",
+  "mode": "two-host",
+  "host_count": 2,
+  "worker_processes": 4,
+  "rank_hosts": [
+    "Computer-A",
+    "Computer-A",
+    "Computer-B",
+    "Computer-B"
+  ],
+  "documents": 90000,
+  "dataset_sha256": "1a36bece88d473792b3fc947a14d155685c47a02d38b18c58ee77ffc134f1263",
+  "warmups": 1,
+  "repeats": 5,
+  "median_seconds": 4.767046199995093,
+  "mean_seconds": 4.811783679999644,
+  "timing_scope": "in-memory text to gathered top-k dictionaries; includes worker spawn, IPC and data transfer; excludes file I/O and initial TCP connection",
+  "correctness": "each trial matched CPU sequential top-k and global IDF"
+}

@@ -28,7 +28,7 @@ def main():
                 'gpu_name': name, 'gpu_memory_bytes': int(properties['totalGlobalMem']),
                 'driver_version': cp.cuda.runtime.driverGetVersion(),
                 'runtime_version': cp.cuda.runtime.runtimeGetVersion(),
-                'check_sum_squares': actual, 'tfidf_backend_implemented': False}
+                'check_sum_squares': actual}
             code = 0
     except Exception as exc:
         report = {'status': 'failed' if isinstance(exc, AssertionError) else 'unavailable', 'probe_only': True, 'error_type': type(exc).__name__,

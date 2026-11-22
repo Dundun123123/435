@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "input": "data/imdb.jsonl",
+  "dataset_sha256": "1a36bece88d473792b3fc947a14d155685c47a02d38b18c58ee77ffc134f1263",
+  "documents": 90000,
+  "workers": 4,
+  "batch_size": 500,
+  "top_k": 10,
+  "warmups": 1,
+  "repeats": 5,
+  "gpu_process_design": "multiple CUDA contexts on one physical RTX 4060",
+  "scope": "in-memory text to keyword dictionaries; excludes file I/O",
+  "correctness": "all documents top-k and global IDF matched CPU single",
+  "python": "3.13.1",
+  "os": "Windows-11-10.0.26200-SP0",
+  "summary": {
+    "cpu-single": {
+      "median_seconds": 7.789037099995767,
+      "mean_seconds": 7.776143039992894,
+      "sample_std_seconds": 0.06688606369687172,
+      "q1_seconds": 7.767945999992662,
+      "q3_seconds": 7.795440499990946,
+      "iqr_seconds": 0.027494499998283572
+    },
+    "cpu-multi": {
+      "median_seconds": 3.153570900001796,
+      "mean_seconds": 3.1508528399979694,
+      "sample_std_seconds": 0.017570196488774552,
+      "q1_seconds": 3.1476526000042213,
+      "q3_seconds": 3.155374199996004,
+      "iqr_seconds": 0.007721599991782568,
+      "speedup_vs_cpu_single": 2.4699102531645414
+    },
+    "gpu-single": {
+      "median_seconds": 9.952505499997642,
+      "mean_seconds": 9.995389680002699,
+      "sample_std_seconds": 0.19392307148293073,
+      "q1_seconds": 9.844275600000401,
+      "q3_seconds": 10.04325260000769,
+      "iqr_seconds": 0.19897700000728946,
+      "speedup_vs_cpu_single": 0.7826207280164389
+    },
+    "gpu-multi": {
+      "median_seconds": 11.722630999996909,
+      "mean_seconds": 11.720221800002037,
+      "sample_std_seconds": 0.1688069194315273,
+      "q1_seconds": 11.607867900005658,
+      "q3_seconds": 11.769512099999702,
+      "iqr_seconds": 0.16164419999404345,
+      "speedup_vs_cpu_single": 0.6644444493729966
+    }
+  }
+}

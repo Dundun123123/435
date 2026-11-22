@@ -1,0 +1,7 @@
+trial,warmup,mode,seconds,worker_processes,hosts
+-1,True,one-host,1.6992156999913277,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+0,False,one-host,1.684744900005171,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+1,False,one-host,1.6323565000056988,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+2,False,one-host,1.6893208999972558,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+3,False,one-host,1.6545810000097845,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
+4,False,one-host,1.7378154000034556,4,"[""Computer-A"", ""Computer-A"", ""Computer-A"", ""Computer-A""]"
